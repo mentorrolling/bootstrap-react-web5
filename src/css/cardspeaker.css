@@ -1,0 +1,19 @@
+.container-img-card {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  right: 10px;
+  bottom: 10px;
+  /* display: flex; */
+  & span {
+    background-color: rgba(0, 0, 0, 0.417);
+    border-radius: 5px;
+    padding: 10px;
+
+    color: white;
+  }
+}

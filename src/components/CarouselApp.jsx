@@ -1,4 +1,3 @@
-import React from "react";
 import "../css/carousel.css";
 // import img1 from "/public/1.jpg";
 const CarouselApp = (props) => {
@@ -7,7 +6,10 @@ const CarouselApp = (props) => {
     <div id={id} className="carousel slide carouselApp">
       <div className="carousel-inner">
         {carouselImg.map((item, index) => (
-          <div key={index} className="carousel-item active">
+          <div
+            key={index}
+            className={index === 0 ? "carousel-item active" : "carousel-item"}
+          >
             <img src={item.src} className="d-block w-100" alt={item.alt} />
           </div>
         ))}
