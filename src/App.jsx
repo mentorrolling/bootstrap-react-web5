@@ -2,6 +2,7 @@ import NavBarApp from "./components/NavBarApp";
 import CarouselApp from "./components/CarouselApp";
 import speakers from "./data/speakers";
 import CardSpeaker from "./components/CardSpeaker";
+import CounterApp from "./components/CounterApp";
 
 const App = () => {
   //código de javascript
@@ -58,17 +59,21 @@ const App = () => {
           ))}
         </div>
         <div className="row my-5">
-          <div className="col">
-            <h3>Mensaje</h3>
-            <button
+          <div className="col text-center">
+            <h3>Tickets del evento</h3>
+            <CounterApp valor={10} />
+
+            {/* <button
               onClick={() => mostrarMensaje("Hola mundo")}
               className="btn btn-warning"
             >
               Click me!
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
+
+      {/* componente footer  */}
     </>
   );
 };

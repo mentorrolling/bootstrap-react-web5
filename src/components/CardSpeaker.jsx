@@ -13,7 +13,9 @@ const CardSpeaker = (props) => {
           </div>
         </div>
         <div className="card-body">
-          <span className={`badge rounded-pill text-bg-${color}`}>{rol}</span>
+          <span className={`badge my-2 rounded-pill text-bg-${color}`}>
+            {rol}
+          </span>
           <h5 className="card-title">{titulo}</h5>
           <p className="card-text">{descripcion}</p>
         </div>
